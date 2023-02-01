@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    </link>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="hero">
+            <div class="umbrella">
+                <img src="Assets/Blue_umbrella.png" class=" umbrella-img" id="imgChange" alt="blue-umbrella"
+                     />
+                    <img src="Assets/loader_icon.svg" class="loader_icon" id="loader" alt="loader-anim"/>
+                    <img src="" id="logo-img" style="opacity: 0;">
+            </div>
+            </div>
+            <div >
+                <div class="content">
+                    <h1 class="main-heading">Custom Umbrella</h1>
+                    <div class="color-picker">
+                        <button class="color-dot" id="pink" style="background-color:pink"
+                            onclick="changeImagePink()"></button>
+                        <button class="color-dot" id="blue" style="background-color:blue"
+                            onclick="changeImageBlue()"></button>
+                        <button class="color-dot" id="yellow" style="background-color:yellow"
+                            onclick="changeImageYellow()"></button>
+                    </div>
+                    <h3>Customize your umbrella</h3>
+                    <h4>Upload a logo for an instant preview</h4>
+                    <h6>.png and .jpg only. Max file size 5mb only</h6>
+                    <!-- <input type="file" id="upload" hidden /> -->
+                    <div class="upload-files">
+                    <input type="file" id="upload" hidden>
+                    <img src="Assets/upload_icon.svg" class="upload-btn" alt="btn-image" />
+                    <label for="upload" id="upload-area">UPLOAD LOGO</label></input>
+                </div>
+                </div>
+                <div class="preview">
+                    <p class="pic"></p>   
+                </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
